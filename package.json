@@ -1,0 +1,36 @@
+{
+  "name": "naruto-game",
+  "version": "0.1.0",
+  "description": "Game",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "FTR",
+  "contributors": [],
+  "dependencies": {
+    "async": "*",
+    "body-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-session": "*",
+    "mysql": "^2.10.0",
+    "time-grunt": "^1.3.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^2.1.0",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-sass": "^1.1.0",
+    "load-grunt-config": "^0.19.1"
+  }
+}
