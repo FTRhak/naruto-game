@@ -103,6 +103,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('default', ['clean', 'jshint', 'react', 'concat', 'uglify', 'sass:prod', 'cssmin:dev']);//, 'watch'
-    grunt.registerTask('dev', ['clean', 'jshint', 'react', 'concat', 'sass:dev', 'watch']);
+    grunt.registerTask('dev', ['clean', 'jshint', 'react', 'concat', 'sass:dev']);
 
 };
