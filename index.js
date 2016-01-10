@@ -27,8 +27,8 @@ app.express.set('view engine', 'ejs');
 app.express.use(bodyParser.json());
 app.express.use(session({secret: 'reqrutment123'}));
 
-app.express.use("/css/", express.static(_basePath + './client/css'));
-//app.express.use(express.static(_basePath + './client'));
+app.express.use('/css', express.static(_basePath + 'client/css'));
+app.express.use('/js', express.static(_basePath + 'client/js'));
 
 var controllers = require(_basePath + './server/controllers');
 controllers(app.express);

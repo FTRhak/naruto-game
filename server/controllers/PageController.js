@@ -4,27 +4,25 @@ module.exports = function PageController() {
             action: "index",
             url: "/",
             method: "get"
+        },
+        {
+            action: "user",
+            url: "/user",
+            method: "get"
         }
     ];
     this.index = function (req, res) {
         //
         db.query('SELECT * from user', function (err, rows, fields) {
-            if (!err)
-                console.log('The solution is: ', rows);
-            else
-                console.log('Error while performing Query.');
             res.render('index', {data: rows});
         });
         
     };
     
 
-    this.user = function () {
+    this.user = function (req, res) {
         db.query('SELECT * from User', function (err, rows, fields) {
-            if (!err)
-                console.log('The solution is: ', rows);
-            else
-                console.log('Error while performing Query.');
+            res.json({user: rows[0]});
         });
     };
 };
